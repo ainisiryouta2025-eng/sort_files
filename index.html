@@ -1,0 +1,56 @@
+<style>
+  /* 1. 外側（画面全体）の背景 */
+  body {
+    background-image: url("bg.png");
+    background-size: cover;
+    margin: 0;
+    padding: 24px;
+  }
+
+  /* 2. 内側（コンテンツを入れる箱）の背景 */
+.main-box {
+    width: 680px;      /* 横幅（例：少し狭くするなら 560px、広くするなら 800px） */
+    max-width: 100%;   /* スマホなど狭い画面ではみ出さないようにする */
+    min-height: 400px; /* 最低限の高さ（中身が増えたら自動で伸びる） */
+    margin: 0 auto;    /* 中央に配置 */
+    background-color: #ebf7ab;
+    border: 2px solid #666666;
+}
+.banner {
+    display: block;
+    width: 100%;      /* .main-box の横幅いっぱいに合わせる */
+    height: auto;     /* 縦横比を崩さずに自動で高さを合わせる */
+    border-bottom: 2px solid #666666; /* 昔っぽい区切り線 */
+  }
+</style>
+
+<body>
+  <div class="main-box">
+  <h1>
+    <img src="ddd.png" alt="sort_files" class="banner">
+  </h1>
+    <h2>Automatic File Sorting Tool</h2>
+
+    <p>This tool automatically organizes files inside a specified folder, 
+    moving them into appropriate subfolders based on their file type or extension.</p>
+
+    <p>Note</p>
+    <p><strong>Warning: Runs in dry-run mode by default. Always back up important files before running with --apply.</strong> </p>
+    <p>If Windows SmartScreen appears, click "More info" -> "Run anyway" (or run sort_files.py directly with Python).</p>
+    <p>Supported OS: Windows, Linux, macOS</p>
+    <p>
+
+
+    </p>
+
+    <p>download</p>
+    <a href="sort_files.zip" download>sort_files.zip(windows)</a>
+    <p></p>
+    <a href="sort_files.py" download>sort_files.py(linux/mac)</a>
+    <p>license</p>
+    <a href="license.html">license</a>
+
+    <p>memo</p>
+    <p>1. Released: 2026-11-24 | Distributed: 2026-11-24</p>
+  </div>
+</body>
